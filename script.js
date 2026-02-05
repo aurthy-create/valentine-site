@@ -51,29 +51,33 @@ for(let day=1; day<=28; day++){
   calendar.appendChild(div);
 }
 
-// ===== Floating hearts =====
 const heartsContainer = document.getElementById("hearts-container");
 const heartImages = ["heart (1).png","heart (2).png","heart (3).png","heart (4).png","heart (5).png","heart (6).png","heart.png"];
 
 for(let i=0; i<15; i++){
   const img = document.createElement("img");
   img.src = heartImages[Math.floor(Math.random()*heartImages.length)];
-  img.style.left = Math.random()*100 + "vw";
-  img.style.top = Math.random()*100 + "vh";
+  
+  // Random initial position
+  img.style.left = Math.random() * 90 + "vw";
+  img.style.top = Math.random() * 90 + "vh";
+
+  // Random size
   const size = 20 + Math.random()*40;
   img.style.width = size + "px";
   img.style.height = size + "px";
+
   heartsContainer.appendChild(img);
 
- // Animate hearts floating up
-let top = parseFloat(img.style.top);
-setInterval(() => {
-  top -= 0.3;       // speed of floating
-  if(top < -10) top = 100; // reset to bottom when offscreen
-  img.style.top = top + "vh";
-}, 20);
-
+  // Animate floating
+  let top = parseFloat(img.style.top);
+  setInterval(() => {
+    top -= 0.3;             // speed
+    if(top < -10) top = 100; // reset to bottom
+    img.style.top = top + "vh";
+  }, 20);
 }
+
 
 // ===== Envelope & Message Modals =====
 const envelopeModal = document.getElementById("envelope-modal");
@@ -117,6 +121,7 @@ function openRoseCard() {
 function closeRoseCard() {
   document.getElementById("roseCardOverlay").classList.add("hidden");
 }
+
 
 
 
