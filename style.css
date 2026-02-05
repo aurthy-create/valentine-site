@@ -194,3 +194,8 @@ body {
   font-size: 14px;
   cursor: pointer;
 }
+.calendar-day.future {
+  background: #f8d9e0;   /* lighter/pale pink */
+  cursor: not-allowed;
+  opacity: 0.5;
+}
