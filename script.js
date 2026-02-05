@@ -57,7 +57,7 @@ const heartImages = ["heart (1).png","heart (2).png","heart (3).png","heart (4).
 
 for(let i=0; i<15; i++){
   const img = document.createElement("img");
-  img.src = "images/" + heartImages[Math.floor(Math.random()*heartImages.length)];
+  img.src =  heartImages[Math.floor(Math.random()*heartImages.length)];
   img.style.left = Math.random()*100 + "vw";
   img.style.top = Math.random()*100 + "vh";
   const size = 20 + Math.random()*40;
@@ -117,4 +117,5 @@ function openRoseCard() {
 function closeRoseCard() {
   document.getElementById("roseCardOverlay").classList.add("hidden");
 }
+
 
