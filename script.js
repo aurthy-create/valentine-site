@@ -2,35 +2,35 @@
 const messages = {
   7: { 
       text: "Happy Rose Day baby. I wish I could get you real roses right now. Hopefully soon.", 
-      image: "images/rose.png" 
+      image: "rose.png" 
   },
   8: { 
-      text: "Happy Propose Day baby. Will you be mine forever?", 
-      image: "images/propose.png" 
+      text: "Happy Propose Day baby! not even going to ask you to be my valentine, you are mine, forever mine. Hehe", 
+      image: "propose.png" 
   },
   9: { 
       text: "Happy Chocolate Day baby. Wish I could share chocolates with you right now!", 
-      image: "images/chocolate.png" 
+      image: "chocolate.png" 
   },
   10:{ 
       text: "Happy Teddy Day! You are my teddy.", 
-      image: "images/teddy.png" 
+      image: "teddy.png" 
   },
   11:{ 
       text: "Happy Promise Day! I pinky promise to always be there for you.", 
-      image: "images/promise.png" 
+      image: "promise.png" 
   },
   12:{ 
       text: "Happy Hug Day! You keep me warm by giving me big hug.", 
-      image: "images/hug.png" 
+      image: "hug.png" 
   },
   13:{ 
       text: "Happy Kiss Day! I want to give you sooooooo many kissys", 
-      image: "images/kiss.png" 
+      image: "kiss.png" 
   },
   14:{ 
       text: "Happy Valentine’s Day! You make every day special. I want to hold your hand forever", 
-      image: "images/vday.png" 
+      image: "vday.png" 
   },
 };
 
@@ -117,3 +117,4 @@ function openRoseCard() {
 function closeRoseCard() {
   document.getElementById("roseCardOverlay").classList.add("hidden");
 }
+
