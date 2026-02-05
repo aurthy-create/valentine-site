@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>February Valentine Calendar</h1>
+
+  <!-- Floating hearts -->
+  <div id="hearts-container"></div>
+
+  <!-- Calendar -->
+  <div id="calendar"></div>
+  
+
+  <!-- Envelope modal -->
+  <div id="envelope-modal" class="modal hidden">
+    <img src="images/envelopered.png" class="envelope" alt="Envelope">
+  </div>
+
+  <!-- Message modal -->
+  <div id="message-modal" class="modal hidden">
+    <div class="message-card">
+      <div id="message-text"></div>
+      <img id="message-image" src="" alt="Day Image">
+      <button id="close-message">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+<!-- Rose Day Card -->
+<div id="roseCardOverlay" class="overlay hidden">
+  <div class="card">
+    <img src="images/rose.png" class="card-image" alt="Rose Day">
+
+    <p class="card-text">
+      Happy Rose Day baby. I wish I could get you real roses right now.
+      Hopefully soon.
+    </p>
+
+    <button class="close-btn" onclick="closeRoseCard()">Close</button>
+  </div>
+</div>
+
+  
+
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #fff0f5;
+  text-align: center;
+  
+  overflow: hidden;   /* disables both vertical and horizontal scroll */
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* Floating hearts */
+#hearts-container img {
+  position: fixed;
+  pointer-events: none;
+   top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;   /* ensures hearts don’t overflow and trigger scrollbar */
+  z-index: 0;
+
+}
+
+/* Calendar styling */
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.calendar-day {
+  background: #ffe6f2;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.calendar-day.today {
+  border: 2px solid #d6336c;
+}
+
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.hidden { display: none; }
+
+/* Envelope styling */
+
+.envelope {
+  width: 160px;
+  max-width: 60vw;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.envelope:hover {
+  transform: scale(1.05);
+}
+
+
+/* Message card */
+
+.message-card {
+  display: flex;
+  flex-direction: column;  /* stack items vertically */
+  align-items: center;     /* center horizontally */
+  gap: 15px;               /* space between image, text, button */
+  background: #faf7f2;     /* soft cream */
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 90vw;
+  width: 400px;            /* reasonable width */
+  text-align: center;      /* center text */
+}
+
+
+
+/* Text inside card */
+.message-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.message-card #message-text {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+
+/* Image inside card */
+.message-card img {
+  width: 180px;
+  max-width: 40vw;
+  height: auto;
+  object-fit: contain;
+}
+
+.message-card button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  background: #d6336c;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.message-card button:hover {
+  background: #a52b5f;
+}
+
+
+@media (max-width: 500px) {
+  .message-card {
+    width: 90vw;
+    padding: 16px;
+  }
+
+  .message-card img {
+    width: 120px;  /* smaller image for phones */
+  }
+
+  .message-card #message-text {
+    font-size: 14px;
+  }
+}
+
+/* Overlay background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Hide by default */
+.hidden {
+  display: none;
+}
+
+/* Message card */
+.card {
+  background: #faf7f2; /* soft cream */
+  border-radius: 18px;
+  padding: 24px;
+  width: 90vw;
+  max-width: 420px;
+  text-align: center;
+}
+
+/* Rose image */
+.card-image {
+  width: 140px;
+  max-width: 60vw;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+/* Message text */
+.card-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Close button */
+.close-btn {
+  background: #e6b7c2;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
