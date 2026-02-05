@@ -38,9 +38,9 @@ const messages = {
 
 // ===== Create Calendar =====
 const calendar = document.getElementById("calendar");
-//const today = new Date();
-//const currentDay = today.getDate();
-const currentDay = 7; // TEMPORARY testing value
+const today = new Date();
+const currentDay = today.getDate();
+//const currentDay = 7; // TEMPORARY testing value
 
 for(let day=1; day<=28; day++){
   const div = document.createElement("div");
@@ -121,6 +121,7 @@ function openRoseCard() {
 function closeRoseCard() {
   document.getElementById("roseCardOverlay").classList.add("hidden");
 }
+
 
 
 
