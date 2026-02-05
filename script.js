@@ -2,27 +2,27 @@
 const messages = {
   1: { 
       text: "click on today's date", 
-      image: "images/card.png" 
+      image: "card.png" 
   },
   2: { 
       text: "click on today's date", 
-      image: "images/card.png" 
+      image: "card.png" 
   },
   3: { 
       text: "click on today's date", 
-      image: "images/card.png" 
+      image: "card.png" 
   },
   4: { 
       text: "click on today's date", 
-      image: "images/card.png" 
+      image: "card.png" 
   },
   5: { 
       text: "click on today's date", 
-      image: "images/card.png" 
+      image: "card.png" 
   },
    6: { 
       text: "click on today's date", 
-      image: "images/card.png" 
+      image: "card.png" 
   },
   7: { 
       text: "Happy Rose Day baby. I wish I could get you real roses right now. Hopefully soon.", 
@@ -82,7 +82,6 @@ for(let day=1; day<=28; day++){
 
   calendar.appendChild(div);
 }
-
 // ===== Handle day clicks =====
 document.querySelectorAll(".calendar-day").forEach(dayDiv => {
   dayDiv.addEventListener("click", () => {
@@ -94,8 +93,6 @@ document.querySelectorAll(".calendar-day").forEach(dayDiv => {
     }
   });
 });
-
-
 //floating hearts
 const heartsContainer = document.getElementById("hearts-container");
 const heartImages = ["heart (1).png","heart (2).png","heart (3).png","heart (4).png","heart (5).png","heart (6).png","heart.png"];
@@ -158,6 +155,7 @@ function openRoseCard() {
 function closeRoseCard() {
   document.getElementById("roseCardOverlay").classList.add("hidden");
 }
+
 
 
 
