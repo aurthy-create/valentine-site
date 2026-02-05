@@ -1,5 +1,29 @@
 // ===== Calendar Data =====
 const messages = {
+  1: { 
+      text: "click on today's date", 
+      image: "images/card.png" 
+  },
+  2: { 
+      text: "click on today's date", 
+      image: "images/card.png" 
+  },
+  3: { 
+      text: "click on today's date", 
+      image: "images/card.png" 
+  },
+  4: { 
+      text: "click on today's date", 
+      image: "images/card.png" 
+  },
+  5: { 
+      text: "click on today's date", 
+      image: "images/card.png" 
+  },
+   6: { 
+      text: "click on today's date", 
+      image: "images/card.png" 
+  },
   7: { 
       text: "Happy Rose Day baby. I wish I could get you real roses right now. Hopefully soon.", 
       image: "rose.png" 
@@ -134,6 +158,7 @@ function openRoseCard() {
 function closeRoseCard() {
   document.getElementById("roseCardOverlay").classList.add("hidden");
 }
+
 
 
 
