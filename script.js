@@ -34,23 +34,45 @@ const messages = {
   },
 };
 
-
-
 // ===== Create Calendar =====
 const calendar = document.getElementById("calendar");
+
 const today = new Date();
 const currentDay = today.getDate();
-//const currentDay = 7; // TEMPORARY testing value
+const currentMonth = today.getMonth(); // 0=Jan, 1=Feb
+const isFebruary = currentMonth === 1; // Only enable Feb days
 
 for(let day=1; day<=28; day++){
   const div = document.createElement("div");
   div.classList.add("calendar-day");
-  if(day === currentDay) div.classList.add("today");
   div.textContent = day;
   div.dataset.day = day;
+
+  // Highlight today
+  if(isFebruary && day === currentDay) div.classList.add("today");
+
+  // Grey out future days
+  if(isFebruary && day > currentDay){
+    div.classList.add("future");
+  }
+
   calendar.appendChild(div);
 }
 
+// ===== Handle day clicks =====
+document.querySelectorAll(".calendar-day").forEach(dayDiv => {
+  dayDiv.addEventListener("click", () => {
+    const day = parseInt(dayDiv.dataset.day);
+    // Only allow today/past in February
+    if(isFebruary && day <= currentDay){
+      envelopeModal.classList.remove("hidden");
+      envelope.dataset.day = day;
+    }
+  });
+});
+
+
+//floating hearts
 const heartsContainer = document.getElementById("hearts-container");
 const heartImages = ["heart (1).png","heart (2).png","heart (3).png","heart (4).png","heart (5).png","heart (6).png","heart.png"];
 
@@ -87,16 +109,7 @@ const messageText = document.getElementById("message-text");
 const messageImage = document.getElementById("message-image");
 const closeMessage = document.getElementById("close-message");
 
-// When user clicks a day
-document.querySelectorAll(".calendar-day").forEach(dayDiv => {
-  dayDiv.addEventListener("click", () => {
-    const day = parseInt(dayDiv.dataset.day);
-    if(day <= currentDay){  // Only allow today/past
-      envelopeModal.classList.remove("hidden");
-      envelope.dataset.day = day; // store day for popup
-    }
-  });
-});
+
 
 // Click envelope to show message
 envelope.addEventListener("click", () => {
@@ -121,6 +134,7 @@ function openRoseCard() {
 function closeRoseCard() {
   document.getElementById("roseCardOverlay").classList.add("hidden");
 }
+
 
 
 
