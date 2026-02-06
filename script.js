@@ -29,15 +29,15 @@ const messages = {
       image: "rose.png" 
   },
   8: { 
-      text: "Happy Propose Day baby! not even going to ask you to be my valentine, you are mine, forever mine. Hehe", 
+      text: "Happy Propose Day baby! But I am not even going to ask you to be my valentine, you are mine, forever mine. Hehe", 
       image: "propose.png" 
   },
   9: { 
-      text: "Happy Chocolate Day baby. Wish I could share chocolates with you right now!", 
+      text: "Happy Chocolate Day baby. Wish I could share chocolates with you right now! Not going to feed you my handmade chocolates this time dw!", 
       image: "chocolate.png" 
   },
   10:{ 
-      text: "Happy Teddy Day! You are my teddy.", 
+      text: "Happy Teddy Day! You are my teddy. Hug dibooooooo", 
       image: "teddy.png" 
   },
   11:{ 
@@ -45,7 +45,7 @@ const messages = {
       image: "promise.png" 
   },
   12:{ 
-      text: "Happy Hug Day! You keep me warm by giving me big hug.", 
+      text: "Happy Hug Day! Your hugs keep me warm (and alive. i love you).", 
       image: "hug.png" 
   },
   13:{ 
@@ -57,7 +57,7 @@ const messages = {
       image: "vday.png" 
   },
   15:{ 
-      text: "Valentine’s Day maybe over but my love for is going stay forever", 
+      text: "Valentine’s Day may be over but my love for is going stay forever", 
       image: "infinity.png" 
   },
   16:{ 
@@ -67,6 +67,50 @@ const messages = {
   17:{ 
       text: "this is how i see you", 
       image: "kittyeep.png" 
+  },
+  18:{ 
+      text: "you are my superhero", 
+      image: "kittyfly.png" 
+  },
+  19:{ 
+      text: " https://youtu.be/PB5_2-GXYyU?si=T7A3F-nHNCeYBu6w ", 
+      image: "audio.png" 
+  },
+  20:{ 
+      text: "I hope you can achieve anything you want without much struggle", 
+      image: "success.png" 
+  },
+  21:{ 
+      text: " why are you still checking this? ", 
+      image: "naughty.png" 
+  },
+  22:{ 
+      text: " this is me (porer din tomake dekhte paba) ", 
+      image: "cow.png" 
+  },
+  23:{ 
+      text: " this is you ", 
+      image: "bull.png" 
+  },
+  24:{ 
+      text: " falling in love feels like downloading a person directly into your brain without reading the terms and conditions(lame ik) ", 
+      image: "giggle.png" 
+  },
+  25:{ 
+      text: " Morning thinks of you, evening holds your gentle smile— love, let’s never part. ", 
+      image: "couple.png" 
+  },
+  26:{ 
+      text: " you are doing amazing sweetie, I am very proud of who you are ", 
+      image: "support.png" 
+  },
+  27:{ 
+      text: " tira-miss-u ", 
+      image: "tiramisu.png" 
+  },
+  28:{ 
+      text: " if you actually sticked for that long I am impressed, thank you jaan. I love you the most. hehe ", 
+      image: "thank-you.png" 
   },
 };
 
@@ -167,6 +211,7 @@ function openRoseCard() {
 function closeRoseCard() {
   document.getElementById("roseCardOverlay").classList.add("hidden");
 }
+
 
 
 
