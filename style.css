@@ -213,4 +213,20 @@ body {
   opacity: 0.5;
 }
 
+/* ===== Desktop layout fix ===== */
+@media (min-width: 900px) {
+  .page-wrapper {
+    max-width: 60vw;   /* calendar covers ~60% of screen */
+  }
+
+  #calendar {
+    gap: 18px;         /* more breathing room on PC */
+  }
+
+  .calendar-day {
+    font-size: 1.1rem;
+    border-radius: 16px;
+  }
+}
+
 
