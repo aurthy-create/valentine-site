@@ -42,22 +42,23 @@ body {
   margin: 20px auto;
 }
 
-/*.calendar-day { */
-  /*background: #ffe6f2;
-  
-  display: felx;
+.calendar-day { 
+  background: #ffe6f2;
+  display: flex;
   alig-items: center;
+  padding: 20px;
   justify-content: center;
   border-radius: 14px;
   cursor: pointer;
-}*/
-.calendar-day {
+  position: relative;
+}
+/*.calendar-day {
   background: #ffe6f2;
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
   position: relative;
-}
+}*/
 .calendar-day.today {
   border: 2px solid #d6336c;
 }
@@ -234,6 +235,7 @@ body {
     border-radius: 16px;
   }
 }
+
 
 
 
