@@ -44,7 +44,7 @@ body {
 
 .calendar-day {
   background: #ffe6f2;
-  aspect-ratio: 1/1;
+  
   display: felx;
   alig-items: center;
   justify-content: center;
@@ -212,4 +212,5 @@ body {
   cursor: not-allowed;
   opacity: 0.5;
 }
+
 
