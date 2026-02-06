@@ -56,6 +56,18 @@ const messages = {
       text: "Happy Valentine’s Day! You make every day special. I want to hold your hand forever", 
       image: "vday.png" 
   },
+  15:{ 
+      text: "Valentine’s Day maybe over but my love for is going stay forever", 
+      image: "infinity.png" 
+  },
+  16:{ 
+      text: "you are greatest gift", 
+      image: "present.png" 
+  },
+  17:{ 
+      text: "this is how i see you", 
+      image: "kittyeep.png" 
+  },
 };
 
 // ===== Create Calendar =====
@@ -155,6 +167,7 @@ function openRoseCard() {
 function closeRoseCard() {
   document.getElementById("roseCardOverlay").classList.add("hidden");
 }
+
 
 
 
