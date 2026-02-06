@@ -9,6 +9,15 @@ body {
   padding: 0;
   position: relative;
 }
+.page-wrapper {
+  width: 100%;
+  max-width: 420px;   /* mobile-friendly width */
+  margin: 0 auto;
+  padding: 16px;      /* gap from screen edges */
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;         /* above floating hearts */
+}
 
 /* Floating hearts */
 #hearts-container img {
@@ -28,16 +37,19 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 10px;
-  max-width: 700px;
+  width: 100%;
+  max-width: 100%;
   margin: 20px auto;
 }
 
 .calendar-day {
   background: #ffe6f2;
-  padding: 15px;
-  border-radius: 10px;
+  aspect-ratio: 1/1;
+  display: felx;
+  alig-items: center;
+  justify-content: center;
+  border-radius: 14px;
   cursor: pointer;
-  position: relative;
 }
 
 .calendar-day.today {
@@ -87,6 +99,7 @@ body {
   max-width: 90vw;
   width: 400px;            /* reasonable width */
   text-align: center;      /* center text */
+  margin: 0 16px;
 }
 
 
@@ -199,3 +212,4 @@ body {
   cursor: not-allowed;
   opacity: 0.5;
 }
+
